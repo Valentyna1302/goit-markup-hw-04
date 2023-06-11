@@ -430,6 +430,10 @@ img {
 }
 
 .footer-logo {
+    margin-right: 120px;
+}
+
+.footer-logo-link {
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -459,9 +463,6 @@ img {
     align-items: baseline;
 }
 
-.footer-soc {
-    margin-left: 120px;
-}
 
 .footer-soc-title {
     font-weight: 500;
@@ -469,7 +470,7 @@ img {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--primary-white-color);
-        padding-bottom: 16px;
+        margin-bottom: 16px;
 }
 
 .footer-soc-list {
@@ -601,7 +602,7 @@ img {
     padding: 12px 24px;
     margin-left: auto;
     margin-right: auto;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-button:hover,
@@ -632,11 +633,12 @@ img {
 }
 
 .projects-link:hover .projects-overlay-text,
-.projects-link:hover .projects-overlay-text {
+.projects-link:focus .projects-overlay-text {
     transform: translate(0);
 }
 
-.projects-link:hover {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
